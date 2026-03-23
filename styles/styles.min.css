@@ -26,32 +26,6 @@ html.dark-mode {
 }
 
 
-/* Smooth transitions for interactive elements */
-a.button.icon,
-button.btn,
-.menu a,
-.menu.toolbar .dropbutton,
-.listing tr,
-.listing li a,
-.message,
-.attachmentslist li,
-.tdzipdownload,
-#messagelist-header a,
-.compose-headers button,
-.popupmenu .listing li>a,
-#logo {
-    transition: background-color 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
-}
-
-.popover {
-    animation: popover-in 0.15s ease-out;
-}
-
-@keyframes popover-in {
-    from { opacity: 0; transform: scale(0.97); }
-    to   { opacity: 1; transform: scale(1); }
-}
-
 #dragdiv {
     width: calc(100% - 28px);
     height: 200px;
@@ -1097,7 +1071,6 @@ html.iframe body {
     justify-content: center;
     line-height: 58px;
     height: 58px;
-    overflow: hidden;
 }
 
 
@@ -3120,15 +3093,12 @@ html.touch .popover .listing li a:before {
 
 .menu.toolbar a {
     color: var(--font);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     float: left;
     border: 0 !important;
-    min-width: 2.4rem;
+    min-width: 2rem;
     max-width: 6rem;
     width: auto;
-    height: 58px;
     cursor: pointer;
     font-size: 1rem;
     text-align: center;
@@ -3139,8 +3109,7 @@ html.touch .popover .listing li a:before {
 }
 
 .menu.toolbar a:before {
-    height: auto !important;
-    line-height: 1 !important;
+    height: 2rem !important;
     float: none !important;
     width: auto !important;
     margin: 0 !important;
