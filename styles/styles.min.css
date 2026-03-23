@@ -3109,7 +3109,7 @@ html.touch .popover .listing li a:before {
 }
 
 .menu.toolbar a:before {
-    height: 2rem !important;
+    height: 5rem !important;
     float: none !important;
     width: auto !important;
     margin: 0 !important;
