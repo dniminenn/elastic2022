@@ -3109,10 +3109,14 @@ html.touch .popover .listing li a:before {
 }
 
 .menu.toolbar a:before {
-    height: 5rem !important;
+    height: 3.4rem !important;
     float: none !important;
     width: auto !important;
     margin: 0 !important;
+}
+
+.menu.toolbar .searchbar a:before {
+    height: auto !important;
 }
 
 .menu_bottom a.selected {
